@@ -9,8 +9,8 @@ public String reverseWords(String s) {
                 right = i - 1;
                 while (left < right){
                     tmp = chars[right];
-                    chars[left++] = chars[right--];
-                    chars[right] = tmp;
+                    chars[left++] = chars[right];
+                    chars[right--] = tmp;
                 }
                 left = i + 1;
             }
@@ -18,8 +18,8 @@ public String reverseWords(String s) {
         right = n - 1;
         while (left < right){
             tmp = chars[right];
-            chars[left++] = chars[right--];
-            chars[right] = tmp;
+            chars[left++] = chars[right];
+            chars[right--] = tmp;
         }
         return new String(chars);
     }
